@@ -12,6 +12,6 @@ app.use(cors());
 app.use(bodyParser.json({ limit: '500mb' }));
 app.use(bodyParser.urlencoded({ limit: '500mb', extended: false }));
 
-app.use('/', require('./routes/api'));
+app.use('/api/', require('./routes/api'));
 
 module.exports = app;
