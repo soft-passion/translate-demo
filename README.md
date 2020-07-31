@@ -6,8 +6,16 @@
       password: String,  
       ```
 2. GET - /login/:username/:password | user login
-3. GET - /parse/:url | parsing website from url
-4. GET - /translate/:url | Translate website contents and return html
+3. GET - /parse | parsing website from url
+   - request query params
+      ```
+      url: String,  
+      ```
+4. GET - /translate | Translate website contents and return html
+   - request query params
+      ```
+      url: String,  
+      ```
 5. POST - /upload | upload file
    - request params
       ```

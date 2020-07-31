@@ -45,7 +45,7 @@ const translateUrl = async (url) => {
       const text = response.body;
       const target = 'ru';
       const [translation] = await translate.translate(text, target);
-      console.log(`Translation: ${translation}`);
+      return translation
     }
   } catch (err) {
     console.log(err);
