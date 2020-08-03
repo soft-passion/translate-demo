@@ -5,12 +5,15 @@ module.exports = async (req, res) => {
     const contents = await ScrapeService.translateUrl (
       req.query.url,
     );
-    res.success({
-      contents,
-    });
+    
+    res.writeHead(200, { 'Content-Type': 'text/html' })
+    res.write(contents);
+    res.end();
   } catch (err) {
-    res.error({
-      message: err,
+    res.status(200).json({
+      status: 'error',
+      err,
     });
+    next();
   }
 };

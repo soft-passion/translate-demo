@@ -1,13 +1,14 @@
 const express = require('express');
 
 const route = express();
+const authMiddleWare = require('../../middleware/auth.middleware');
+const resMiddleWare  = require('../../middleware/response');
 
-route.use(require('../../middleware/response'));
-route.use('/login', require('./auth'));
-route.use('/signup', require('./auth'));
-route.use(require('../../middleware/auth.middleware'));
-route.use('/parse', require('./scrape'));
-route.use('/translate', require('./translate'));
-route.use('/upload', require('./filemanage'));
-route.use('/download', require('./filemanage'));
+route.use('/translate', authMiddleWare, require('./translate'));
+route.use('/login', resMiddleWare, require('./auth'));
+route.use('/signup', resMiddleWare, require('./auth'));
+
+route.use('/parse', authMiddleWare, resMiddleWare, require('./scrape'));
+route.use('/upload',  authMiddleWare, resMiddleWare, require('./filemanage'));
+route.use('/download',  authMiddleWare, resMiddleWare, require('./filemanage'));
 module.exports = route;
