@@ -16,7 +16,7 @@
     "@types/express": "^4.11.1",
     "async-request": "^1.2.0",
     "aws-sdk": "^2.610.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "bignumber.js": "^7.2.1",
     "body-parser": "^1.18.3",
