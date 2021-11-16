@@ -15,7 +15,7 @@
     "@types/es6-shim": "^0.31.37",
     "@types/express": "^4.11.1",
     "async-request": "^1.2.0",
-    "aws-sdk": "^2.610.0",
+    "aws-sdk": "^2.814.0",
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",
     "bignumber.js": "^7.2.1",
