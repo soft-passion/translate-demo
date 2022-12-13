@@ -29,7 +29,7 @@
     "es6-promise": "^4.2.4",
     "es6-shim": "^0.35.3",
     "expo-server-sdk": "^3.4.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "google-translate-api": "^2.3.0",
     "jsonwebtoken": "^8.5.1",
     "lint": "^1.1.2",
