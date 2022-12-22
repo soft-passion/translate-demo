@@ -31,7 +31,7 @@
     "expo-server-sdk": "^3.4.0",
     "express": "^4.16.3",
     "google-translate-api": "^2.3.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lint": "^1.1.2",
     "lodash": "^4.17.15",
     "mongodb": "^3.1.0-beta4",
